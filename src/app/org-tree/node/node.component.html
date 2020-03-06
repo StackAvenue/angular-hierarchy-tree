@@ -1,0 +1,7 @@
+<!-- <div class="org-chart-entity-connector org-chart-entity-border" *ngIf="data?.reportees && data?.reportees.length && !hideChild">
+</div> -->
+<div [ngClass]="['org-chart-entity-box']">
+    <span>{{ data.name }}</span>
+</div>
+<div class="org-chart-entity-connector org-chart-entity-border " *ngIf="data?.reportees && data?.reportees.length && !hideChild
+ "></div>
